@@ -7,8 +7,44 @@
     </head>
 
     <body>
-
-        <div id = "map"></div>
+        <div class="popup" id="popup">
+            <h2 id="popupTitle"></h2>
+            <div class="info">
+                <h3> Native Name:</h3>
+                <p id="popupNativeName"></p>
+            </div>
+            <div class="info">
+                <h3> Capital: </h3>
+                <p id="popupCapital"></p>
+            </div>
+            <div class="info">
+                <h3> Demonym:</h3>
+                <p id="popupdemonym"></p>
+            </div>
+            <div class="info">
+                <h3> Sub-Region:</h3>
+                <p id="popupSubRegion"></p>
+            </div>
+            <div class="info">
+                <h3> Population:</h3>
+                <p id="popupPopulation"></p>
+            </div>
+            <div class="info">
+                <h3> Timezone:</h3>
+                <p id="popupTimezone"></p>
+            </div>
+            <div class="info">
+                <h3> Top-Level-Domain:</h3>
+                <p id="popupTLD"></p>
+            </div>
+            <div class="info">
+                <h3> Borders: </h3>
+                <p id="popupBorderingCountries"></p>
+            </div>
+            <button type="button" onclick="closePopup('popup')">Close</button>
+        </div>
+        <div id = "map">
+        </div>
         <script src="index.js"></script>
         
     </body>
