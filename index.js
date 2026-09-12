@@ -1,4 +1,4 @@
-//const response = await fetch("https://api.aviationstack.com/v1/flights?access_key=7db7a9d97d3f8d40b257f2e71e0faafb")
+
 let countries;
 let markers = [];
 
