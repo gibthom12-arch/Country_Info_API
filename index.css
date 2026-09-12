@@ -1,3 +1,7 @@
+body {
+    font-family: Helvetica;
+}
+
 #map {
     position: absolute;
     top: 0;
@@ -12,6 +16,7 @@
     background: rgba(197, 212, 208, 0.9);
     top: 0;
     left: 50%;
+    max-height: 500px;
     width: 400px;
     transform: translate(-50%, -50%) scale(0.1);
     border-radius: 6px;
@@ -21,7 +26,37 @@
     transition: transform 0.4s, top 0.4s;
     background-repeat: no-repeat;
     visibility: hidden;
-    overflow: hidden;
+    overflow-y: scroll;
+}
+
+/*.popup::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    background-image: var(--flag);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+    transform: rotate(90deg);
+    z-index: 0;
+    opacity: 0.5;
+}*/
+
+.InputItems{
+    display: flex;
+    position: absolute;
+    z-index: 999;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.InputItems select {
+    width: 100px;
 }
 
 .popup h2, 
