@@ -111,7 +111,7 @@ function findISO(InputName) {
 
 function SearchName() {
     document.querySelector(".spinner").style.display = "block"
-    const InputName = document.getElementById("CountrySearch").value;
+    const InputName = document.getElementById("CountrySearch").value.trim();
     const CountryISO = findISO(InputName);
 
     if (!CountryISO) {
